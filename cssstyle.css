@@ -1,0 +1,95 @@
+#content{
+  width:400px;
+  height:auto;
+}
+#content_header{
+  background-color:#0e83d7;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	color: #ffffff;
+}
+
+ul#content_count {
+	background-color:#ffffff 50%;
+	width:100%;
+	height:30px;
+}
+ul#content_count >li{
+	float: left;
+    width: 33%;
+}
+	
+ul#content_count >li >div{
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.list_head{
+		padding:10px 10px 5px 20px;
+}
+#content_list:hover .list_desc{
+	color:red;
+
+}
+.list_head >i{
+	display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: solid 1px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 20px;
+	background-color:#c86686;
+	font-style: normal;
+}
+.clearfloat:after{	
+	display:block;
+	clear:both;
+	content:"";
+	visibility:hidden;
+	height:0
+}
+ul{
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul >li{
+	float: left;
+}
+
+ul#content_list >li{
+	width:100%;	
+}
+#content_list .list1{
+	width:auto;
+	float:left;
+}
+#content_list >li >	ul{
+	width: auto;
+	
+}
+ul#content_list .list_head >i{
+	margin-right:5%;
+}
+.list_desc{
+	margin-left:10%
+}
+.list_speed{
+	width: 70%
+}	
+.list_speed >div{
+	display: inline-block;
+	color:#999999;
+    width: 25%; 
+    height: 20px;
+    font-style: normal;
+	text-align:center;
+	float:left;
+	margin-left: 8%;
+	
+}
+
+/*1为什么加浮动？因为用行内元素独占一行的（比如UL>li，典型的就是div），不加浮动的话就变成一行一行的。
+  2为什么清除浮动?清除浮动是针对特定的父级元素来说的，为了子集元素撑开父级元素，所以要清除元素*/
